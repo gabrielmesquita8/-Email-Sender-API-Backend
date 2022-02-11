@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "4902f1d3-202c-4592-9353-b77b9664ebb7",
+		"name": "EMAIL_SERVICE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Simple_Email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"from\": \"validEmail@gmail.com\", \n    \"to\": [\"yourValidEmailInDatabase@gmail.com\"], \n    \"subject\": \"teste\",\n    \"text\": \"teste\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/email/simpleEmail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"email",
+						"simpleEmail"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

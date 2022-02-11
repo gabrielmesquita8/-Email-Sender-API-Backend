@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postDB
+    initialization-mode: always
+    username: docker
+    password: docker
+    driverClassName: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+jwt:
+  secret: littlesecret
